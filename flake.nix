@@ -191,6 +191,7 @@
             boost
             lowdown-nix
             libsodium
+            llvmPackages_16.llvm
           ]
           ++ lib.optionals stdenv.isLinux [libseccomp]
           ++ lib.optional stdenv.hostPlatform.isx86_64 libcpuid;
